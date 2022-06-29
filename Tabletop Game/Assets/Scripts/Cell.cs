@@ -5,7 +5,8 @@ using UnityEngine;
 public class Cell : MonoBehaviour
 {
   public enum CellType { normal, skip, forward, backward}
-  [SerializeField] CellType cellType;
-  [SerializeField] GameObject TeleportCell;
+  [SerializeField] public CellType cellType;
+  [SerializeField] public Cell TeleportCell;
+  public int CellId;
 
 }
